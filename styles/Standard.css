@@ -1,0 +1,28 @@
+/*
+This is the styling for the span element added in the LearnEnglish extension.
+each word will change its background color to the color specified in the
+color attribute of the span element.
+*/
+/*
+
+this is not working
+*/ 
+
+
+.WordsClass:hover {
+    background-color: #dddddd;
+    border-radius: 5px;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* style the word popup */
+#wordInfoDiv {
+    background-color: #dddddd;
+    border-radius: 5px;
+    color: #000000;
+    padding: 5px;
+    position: absolute;
+    z-index: 100;
+    display: none;
+}

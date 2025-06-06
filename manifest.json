@@ -1,0 +1,92 @@
+{
+    "manifest_version": 3,
+    "name": "LearnEnglish",
+    "version": "1.0",
+    "description": "Learn English",
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "content_scripts": [
+        {
+            "js": ["scripts/Standard.js"],
+            "css":["styles/Standard.css"],
+            "matches":[
+                "http://*/*",
+                "https://*/*"
+            ],
+            "exclude_matches": [
+                "https://www.youtube.com/*",
+                "https://www.netflix.com/*/*"
+            ]
+        },
+        {
+            "js": ["scripts/videos.js"],
+            "matches": [
+                "https://www.youtube.com/*",
+                "https://www.netflix.com/*/*"
+            ]
+        }
+    ],
+
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "scripting"
+    ],
+
+    "action": {
+        "default_icon": {
+            "16": "images/icon-16.png",
+            "32": "images/icon-32.png",
+            "48": "images/icon-48.png",
+            "128": "images/icon-128.png"
+        },
+        "default_title": "LearnEnglish",
+        "default_popup": "popup.html"
+    },
+    "assets": [
+        {
+            "src": "images/icon-16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon-32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon-48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "images/icon-128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/add-30.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/audio.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/close-24.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        }
+    ]
+}
