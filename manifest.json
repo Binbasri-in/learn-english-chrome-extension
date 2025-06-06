@@ -51,42 +51,5 @@
         },
         "default_title": "LearnEnglish",
         "default_popup": "popup.html"
-    },
-    "assets": [
-        {
-            "src": "images/icon-16.png",
-            "sizes": "16x16",
-            "type": "image/png"
-        },
-        {
-            "src": "images/icon-32.png",
-            "sizes": "32x32",
-            "type": "image/png"
-        },
-        {
-            "src": "images/icon-48.png",
-            "sizes": "48x48",
-            "type": "image/png"
-        },
-        {
-            "src": "images/icon-128.png",
-            "sizes": "128x128",
-            "type": "image/png"
-        },
-        {
-            "src": "assets/add-30.png",
-            "sizes": "24x24",
-            "type": "image/png"
-        },
-        {
-            "src": "assets/audio.png",
-            "sizes": "24x24",
-            "type": "image/png"
-        },
-        {
-            "src": "assets/close-24.png",
-            "sizes": "24x24",
-            "type": "image/png"
-        }
-    ]
+    }
 }
